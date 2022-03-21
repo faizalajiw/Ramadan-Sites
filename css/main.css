@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap");
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Fredoka', sans-serif;
+}
+
+header .video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .container .animate__animated {
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* Untuk mobile responsive */
+@media (max-width: 1024px) {
+  header .video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: .60rem;
+  background-color: #e2e4e9;
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c6cad2;
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9fa3ad;
+}
+/*# sourceMappingURL=main.css.map */
